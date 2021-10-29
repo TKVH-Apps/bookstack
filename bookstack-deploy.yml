@@ -73,9 +73,9 @@ spec:
           periodSeconds: 20
         resources:
           limits:
-            memory: 128Mi
+            memory: 32Mi
           requests:
-            memory: 64Mi
+            memory: 16Mi
       volumes:
       - name: bookstack
         persistentVolumeClaim:
