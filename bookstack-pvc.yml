@@ -4,7 +4,7 @@ apiVersion: v1
 metadata:
   name: bookstack
   annotations:
-    nfs.io/storage-path: "data01/bookstack"
+    nfs.io/storage-path: "data01/bookstack/config"
 spec:
   storageClassName: managed-nfs-storage
   accessModes:
