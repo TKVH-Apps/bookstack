@@ -16,6 +16,8 @@ spec:
     matchLabels:
       app: mariadb
       part-of: bookstack
+  strategy:
+    type: Recreate
   template:
     metadata:
       labels:
