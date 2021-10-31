@@ -62,14 +62,12 @@ spec:
         - name: bookstack
           mountPath: /config
         readinessProbe:
-          httpGet:
-            path: /
+          tcpSocket:
             port: bookstack
           initialDelaySeconds: 5
           periodSeconds: 10
         livenessProbe:
-          httpGet:
-            path: /
+          tcpSocket:
             port: bookstack
           initialDelaySeconds: 15
           periodSeconds: 20
