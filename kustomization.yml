@@ -8,5 +8,6 @@ resources:
   - bookstack-pvc.yml
   - bookstack-spc.yml
   - bookstack-sa.yml
+  - bookstack-ns.yml
   - mariadb-deploy.yml
   - mariadb-svc.yml
