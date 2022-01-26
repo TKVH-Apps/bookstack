@@ -5,11 +5,6 @@ metadata:
   labels:
     app: bookstack
     part-of: bookstack
-  annotations:
-    keel.sh/policy: force
-    keel.sh/trigger: poll
-    keel.sh/pollSchedule: "@hourly"
-    keel.sh/match-tag: true
 spec:
   replicas: 1
   selector:
@@ -25,7 +20,7 @@ spec:
       serviceAccountName: bookstack
       containers:
       - name: bookstack
-        image: ghcr.io/linuxserver/bookstack:latest
+        image: ghcr.io/linuxserver/bookstack:21.12.3
         ports:
         - name: bookstack
           containerPort: 80
