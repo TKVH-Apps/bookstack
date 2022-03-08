@@ -20,7 +20,7 @@ spec:
       serviceAccountName: bookstack
       containers:
       - name: bookstack
-        image: ghcr.io/linuxserver/bookstack:21.12.3
+        image: ghcr.io/linuxserver/bookstack:22.02.3
         ports:
         - name: bookstack
           containerPort: 80
